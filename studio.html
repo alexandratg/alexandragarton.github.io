@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Alexandra Garton</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  </head>
+
+  <body id="wrapper">
+    <header>
+      <h1>Studio</h1>
+    </header>
+  <nav>
+    <ul>
+      <li class="nav"><a href="resume.html">Home</a></li>
+      <li class="nav"><a href="travel.html">Travel</a></li>
+      <li class="nav"><a href="events.html">Events</a></li>
+      <li class="nav"><a href="art.html">Art</a></li>
+      <li class="nav"><a href="studio.html">Studio</a></li>
+    </ul>
+  </nav>
+    <div class="about">
+      <p>Working in the studio is my favourite type of photography. Being about to work in a controlled environment brings ease to the situation. Although the possibilities are endless of what you can achieve in such a plain room.</p>
+    </div>
+
+    <div class="single-item">
+      <div><img src="img/studio-sized/1.JPG" alt=studio-photography /></div>
+      <div><img src="img/studio-sized/3.JPG" alt=studio-photography /></div>
+      <div><img src="img/studio-sized/4.JPG" alt=studio-photography /></div>
+      <div><img src="img/studio-sized/5.JPG" alt=studio-photography /></div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script> type="text/javascript">
+            $(document).ready(function(){
+              $('.single-item').slick();
+          });
+
+     var windowHeight = window.innerHeight;
+             var header, nav, address = document.querySelector("header");
+             var headerHeight = header.clientHeight;
+             header.style.marginTop = ((windowHeight - headerHeight) / 2) + "px";
+    </script>
+  </body>
+</html>
